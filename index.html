@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-card">
+        <div class="login-card-head">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24"
+                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </a>
+            <img width="25" src="twitter.svg" alt="...">
+        </div>
+        <h1>Sign in to Twitter</h1>
+        <a href="#" class="btn" style="margin-bottom: 1.5rem">
+            <img src="google.svg" alt=""> Continue with Google
+        </a>
+        <a href="#" class="btn" style="margin-bottom: 1.5rem">
+            <img src="apple.svg" alt=""> Continue with Apple
+        </a>
+        <div class="line-border">or</div>
+        <div class="input-group">
+            <input type="text">
+            <span>Phone, email or username</span>
+        </div>
+        <a href="#" class="btn" style="margin-bottom: 1.5rem">Next</a>
+        <a href="#" class="btn btn-outline">Forgot Password?</a>
+
+        <div style="margin: 3rem 0; color: #888">Don't have an account?</div>
+        <a href="#">Sign Up</a>
+    </div>
+    <script>
+        const input = document.querySelector('.login-card input[type="text"]');
+        input.addEventListener('focus', () => input.classList.add('focus'));
+        input.addEventListener('focusout', () => !input.value ? input.classList.remove('focus') : false);
+    </script>
+</body>
+
+</html>
