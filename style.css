@@ -11,6 +11,11 @@ body {
   color: white;
 }
 
+.cent {
+  position: relative;
+  left: 32%;
+}
+
 a {
   text-decoration: none;
 }
